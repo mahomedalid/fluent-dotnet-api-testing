@@ -2,7 +2,7 @@ using Newtonsoft.Json.Linq;
 
 namespace FluentHttpAssertions.Tests
 {
-    public class UnitTest1
+    public class Base
     {
         [Fact]
         public void Test1()
@@ -16,7 +16,7 @@ namespace FluentHttpAssertions.Tests
                 .Or()
                 .WithStatusCode(System.Net.HttpStatusCode.Accepted)
                 .And()
-                .Response.ReadAsStringAsync();
+                ;
         }
     }
 }
